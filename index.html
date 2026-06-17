@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle World</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Vehicle World</h1>
+    <nav>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('product')">Product</button>
+      <button onclick="showPage('contact')">Contact</button>
+      <button onclick="showPage('access')">Access</button>
+      
+    </nav>
+  </header>
+
+  <section class="page active" id="home">
+    <div class="hero-content">
+      <h2>Welcome to Vehicle World</h2>
+      <p>Explore cars, bikes, and modern transport in one beautiful website.</p>
+      <button class="btn" onclick="showWelcome()">Explore Now</button>
+      <p id="timeBox"></p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Cars</h3>
+        <p>Find stylish and powerful cars.</p>
+      </div>
+      <div class="card">
+        <h3>Bikes</h3>
+        <p>Discover fast and smart bikes.</p>
+      </div>
+      <div class="card">
+        <h3>Service</h3>
+        <p>Get support for vehicle care and maintenance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="contact">
+    <h2>Contact Us</h2>
+    <form class="form" id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="email" id="email" placeholder="Your Email" />
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      <button class="btn" type="submit">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <section class="page" id="access">
+    <h2>Access Page</h2>
+    <div class="form">
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button class="btn" onclick="loginMessage()">Login</button>
+    </div>
+  </section>
+
+  <section class="page" id="product">
+  <h2>Our Products</h2>
+  <p>Cars and bikes collection</p>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.U5gNC1-_35a0xub0_aOMQQHaE6?pid=Api&P=0&h=180" alt="Car 1">
+      <h3>BMW M3 Coupe</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.0Iq4k00ntFlxUVJz1JBaJAHaD3?pid=Api&P=0&h=180" alt="Car 2">
+      <h3>Police Car</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.UHZqBsY3rg5j3WkjM2KpAAHaE7?pid=Api&P=0&h=180" alt="Car 3">
+      <h3>BMW M4</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.wM8QPKtBC9MU_RMBI-TRwwHaEK?pid=Api&P=0&h=180" alt="Car 4">
+      <h3>Ardinary Car</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.XX1clwvC6_uGJa4no2R37wHaEo?pid=Api&P=0&h=180" alt="Car 1">
+      <h3>BMW I8 </h3>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.ANNjdRsnAba-BOc9VEaUPwHaE8?pid=Api&P=0&h=180" alt="Bike 1">
+      <h3>Yamaha</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.FXso9wKF3L6NRwGwcLMLaAHaE8?pid=Api&P=0&h=180" alt="Bike 2">
+      <h3>KTM</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.qnc3PggHRipnx1Qp5zDDbwHaEh?pid=Api&P=0&h=180" alt="Bike 3">
+      <h3>Royal Enfield</h3>
+    </div>
+
+     <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.9DCh5eVJttu0i1GB3ukTgwHaJQ?pid=Api&P=0&h=180" alt="Bike 3">
+      <h3>Empty Bike</h3>
+    </div>
+
+     <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.g6LwBdNLFuWc8lesobxCeAHaFy?pid=Api&P=0&h=180" alt="Bike 3">
+      <h3>Yamaha MT15</h3>
+    </div>
+ 
+
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.sjIBMtBJq92wb7IzX_a6qgHaDt?pid=Api&P=0&h=180" alt="Car 5">
+      <h3>Porsche Taycan</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.dsiC7a1xQd-CPZpBuMeCDgHaE8?pid=Api&P=0&h=180" alt="Car 6">
+      <h3>Lamborghini Huracan</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.eoXwXrKjli2AKzFxwRgk8AHaE8?pid=Api&P=0&h=180" alt="Car 6">
+      <h3>BMW M3</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.1zgu4Xwq4BibcVmuSDsMHwHaE8?pid=Api&P=0&h=180" alt="Bike 5">
+      <h3>Bugatti Chiron</h3>
+    </div>
+    <div class="product-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.IriZHC11LxilSfcpn9AvKQHaE6?pid=Api&P=0&h=180" alt="Bike 6">
+      <h3>Orange Jeep</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.ISuJcocnObso0BnZDqnJsAHaEK?pid=Api&P=0&h=180" alt="Bike 6">
+      <h3>Audi</h3>
+    </div>
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
